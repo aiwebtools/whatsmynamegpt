@@ -33,7 +33,7 @@ const NotFound = () => {
         
         <div className="flex justify-center">
           <CyberButton
-            variant="blue"
+            variant="default"
             size="lg"
             href="/"
             glowing

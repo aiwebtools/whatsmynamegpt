@@ -13,7 +13,6 @@ import { Link } from 'lucide-react';
 
 const Index = () => {
   const [consentAccepted, setConsentAccepted] = useState(false);
-  const [showEmbeddedImageModal, setShowEmbeddedImageModal] = useState(false);
 
   useEffect(() => {
     // Update page title
@@ -43,22 +42,28 @@ const Index = () => {
           <div className="absolute -top-2 -right-2 w-5 h-5 bg-cyber-dark rounded-full flex items-center justify-center border border-neon-pink">
             <Link className="h-3 w-3 text-neon-pink" />
           </div>
-          <div className="w-16 h-16 bg-cyber-lighter rounded-md flex items-center justify-center">
-            <span className="text-xs text-neon-blue">AI Art</span>
-          </div>
+          <img 
+            src="https://ideogram.ai/assets/image/lossless/response/ZafO3nzESTGrQyzOMI5DPg" 
+            alt="AI Generated Art" 
+            className="w-16 h-16 object-cover rounded-md"
+          />
         </div>
       </a>
       
-      {/* Mobile link - shown as button */}
+      {/* Mobile link - shown as button with image */}
       <a 
         href="https://ideogram.ai/assets/image/lossless/response/ZafO3nzESTGrQyzOMI5DPg"
         target="_blank"
         rel="noopener noreferrer" 
         className="fixed bottom-20 right-4 z-40 md:hidden"
       >
-        <div className="flex items-center space-x-1 bg-neon-blue/20 backdrop-blur-sm py-1 px-3 rounded-full">
-          <Link className="h-3 w-3 text-neon-blue" />
-          <span className="text-xs text-neon-blue">AI Art</span>
+        <div className="flex items-center space-x-1 glass-panel p-1 rounded-full border border-neon-blue/30">
+          <img 
+            src="https://ideogram.ai/assets/image/lossless/response/ZafO3nzESTGrQyzOMI5DPg" 
+            alt="AI Art" 
+            className="w-6 h-6 rounded-full object-cover"
+          />
+          <Link className="h-3 w-3 text-neon-blue mr-1" />
         </div>
       </a>
       
