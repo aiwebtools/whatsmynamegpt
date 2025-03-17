@@ -39,7 +39,7 @@ const HeroSection: React.FC = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     if (name.trim()) {
-      window.location.href = `https://chatgpt.com/g/g-67d86208628c8191887a7dc6853a5a97-name-insight-predictor?q=${encodeURIComponent(name)}`;
+      window.open(`https://chatgpt.com/g/g-67d86208628c8191887a7dc6853a5a97-name-insight-predictor?q=${encodeURIComponent(name)}`, '_blank');
     }
   };
 
