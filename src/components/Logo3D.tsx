@@ -25,15 +25,27 @@ const Logo3D: React.FC<Logo3DProps> = ({
       const logo = logoRef.current;
       if (!logo) return;
 
+      // Only apply the effect if the mouse is hovering over the logo
       const rect = logo.getBoundingClientRect();
-      const x = e.clientX - rect.left - rect.width / 2;
-      const y = e.clientY - rect.top - rect.height / 2;
-      
-      // Calculate rotation based on mouse position
-      const rotateX = y / -10;
-      const rotateY = x / 10;
-      
-      logo.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
+      const isHovering = 
+        e.clientX >= rect.left && 
+        e.clientX <= rect.right && 
+        e.clientY >= rect.top && 
+        e.clientY <= rect.bottom;
+
+      if (isHovering) {
+        const x = e.clientX - rect.left - rect.width / 2;
+        const y = e.clientY - rect.top - rect.height / 2;
+        
+        // Reduce rotation intensity by 70%
+        const rotateX = y / -30;
+        const rotateY = x / 30;
+        
+        logo.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
+      } else {
+        // Reset when not hovering
+        logo.style.transform = 'perspective(1000px) rotateX(0) rotateY(0)';
+      }
     };
 
     const handleMouseLeave = () => {

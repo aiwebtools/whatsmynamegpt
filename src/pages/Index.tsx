@@ -9,7 +9,6 @@ import FAQSection from '@/components/FAQSection';
 import DisclaimerSection from '@/components/DisclaimerSection';
 import Footer from '@/components/Footer';
 import ConsentModal from '@/components/ConsentModal';
-import { Link } from 'lucide-react';
 
 const Index = () => {
   const [consentAccepted, setConsentAccepted] = useState(false);
@@ -31,42 +30,6 @@ const Index = () => {
 
   return (
     <div className="min-h-screen bg-cyber-darkest text-white relative">
-      {/* Fixed image badge that links out */}
-      <a 
-        href="https://ideogram.ai/assets/image/lossless/response/ZafO3nzESTGrQyzOMI5DPg"
-        target="_blank"
-        rel="noopener noreferrer" 
-        className="fixed bottom-24 left-4 z-40 hidden md:block"
-      >
-        <div className="relative glass-panel p-2 rounded-lg border border-neon-blue/30 hover:border-neon-blue/60 transition-all hover:scale-105">
-          <div className="absolute -top-2 -right-2 w-5 h-5 bg-cyber-dark rounded-full flex items-center justify-center border border-neon-pink">
-            <Link className="h-3 w-3 text-neon-pink" />
-          </div>
-          <img 
-            src="https://ideogram.ai/assets/image/lossless/response/ZafO3nzESTGrQyzOMI5DPg" 
-            alt="AI Generated Art" 
-            className="w-16 h-16 object-cover rounded-md"
-          />
-        </div>
-      </a>
-      
-      {/* Mobile link - shown as button with image */}
-      <a 
-        href="https://ideogram.ai/assets/image/lossless/response/ZafO3nzESTGrQyzOMI5DPg"
-        target="_blank"
-        rel="noopener noreferrer" 
-        className="fixed bottom-20 right-4 z-40 md:hidden"
-      >
-        <div className="flex items-center space-x-1 glass-panel p-1 rounded-full border border-neon-blue/30">
-          <img 
-            src="https://ideogram.ai/assets/image/lossless/response/ZafO3nzESTGrQyzOMI5DPg" 
-            alt="AI Art" 
-            className="w-6 h-6 rounded-full object-cover"
-          />
-          <Link className="h-3 w-3 text-neon-blue mr-1" />
-        </div>
-      </a>
-      
       {!consentAccepted && <ConsentModal onAccept={handleConsentAccept} />}
       
       <Navbar />
@@ -79,6 +42,30 @@ const Index = () => {
         <FAQSection />
         <DisclaimerSection />
       </main>
+      
+      {/* Embedded image section at the bottom of the page */}
+      <div className="w-full py-12 flex justify-center items-center">
+        <div className="max-w-2xl w-full glass-panel p-6 rounded-lg border border-neon-blue/30 hover:border-neon-blue/60 transition-all">
+          <h3 className="text-2xl font-cyber text-neon-blue mb-4">AI-Generated Artwork</h3>
+          <div className="relative aspect-video rounded-lg overflow-hidden">
+            <a 
+              href="https://ideogram.ai/assets/image/lossless/response/ZafO3nzESTGrQyzOMI5DPg"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block w-full h-full"
+            >
+              <img 
+                src="https://ideogram.ai/assets/image/lossless/response/ZafO3nzESTGrQyzOMI5DPg" 
+                alt="AI Generated Art" 
+                className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+              />
+              <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-4">
+                <p className="text-white text-sm">Created with Ideogram AI - Click to view full image</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
       
       <Footer />
     </div>
