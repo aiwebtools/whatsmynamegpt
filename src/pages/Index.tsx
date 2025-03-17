@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect } from 'react';
 import Navbar from '@/components/Navbar';
 import HeroSection from '@/components/HeroSection';
@@ -40,7 +41,7 @@ const Index = () => {
       {/* Embedded image section at the bottom of the page */}
       <div className="w-full py-12 flex justify-center items-center">
         <div className="max-w-2xl w-full glass-panel p-6 rounded-lg border border-neon-blue/30 hover:border-neon-blue/60 transition-all">
-          <h3 className="text-2xl font-cyber text-neon-blue mb-4">UNCOVER INSIGHTS ABOUT YOU, Simply Provide Your Name To Begin</h3>
+          <h3 className="text-2xl font-cyber text-neon-blue mb-4">Discover Your Hidden Potential — Enter Your Name to Begin Your Journey</h3>
           <div className="relative aspect-video rounded-lg overflow-hidden">
             <a href="https://ideogram.ai/assets/image/lossless/response/ZafO3nzESTGrQyzOMI5DPg" target="_blank" rel="noopener noreferrer" className="block w-full h-full">
               <img src="https://ideogram.ai/assets/image/lossless/response/ZafO3nzESTGrQyzOMI5DPg" alt="AI Generated Art" className="w-full h-full object-cover hover:scale-105 transition-transform duration-300" />
