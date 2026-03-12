@@ -127,7 +127,7 @@ const Footer: React.FC = () => {
         {/* More AI Tools corner button */}
         <div className="fixed bottom-4 right-4 z-10">
           <a 
-            href="https://www.aiwebtools.ai"
+            href="https://aiwebtools.lovable.app/?via=aiwebtools"
             className="flex items-center justify-center px-4 py-2 rounded-full bg-cyber-dark border border-neon-green text-neon-green hover:bg-neon-green/10 transition-all shadow-neon-green"
           >
             More AI Tools

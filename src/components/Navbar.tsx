@@ -113,7 +113,7 @@ const Navbar: React.FC = () => {
               Disclaimer
             </a>
             <a
-              href="https://www.aiwebtools.ai"
+              href="https://aiwebtools.lovable.app/?via=aiwebtools"
               className="block px-3 py-2 rounded-md text-base font-medium text-neon-green hover:bg-neon-green/10 transition-colors"
               onClick={() => setMobileMenuOpen(false)}
             >
