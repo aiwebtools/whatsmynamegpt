@@ -66,7 +66,7 @@ const Footer: React.FC = () => {
                   </li>
                   <li>
                     <a 
-                      href="https://www.aiwebtools.ai" 
+                      href="https://aiwebtools.lovable.app/?via=aiwebtools" 
                       className="text-white/70 hover:text-neon-green transition-colors font-semibold block"
                     >
                       More AI Tools
