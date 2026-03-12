@@ -66,7 +66,7 @@ const Footer: React.FC = () => {
                   </li>
                   <li>
                     <a 
-                      href="https://www.aiwebtools.ai" 
+                      href="https://aiwebtools.lovable.app/?via=aiwebtools" 
                       className="text-white/70 hover:text-neon-green transition-colors font-semibold block"
                     >
                       More AI Tools
@@ -115,7 +115,7 @@ const Footer: React.FC = () => {
           <div className="w-full md:w-4/12 px-4 mx-auto text-center">
             <div className="text-sm text-white/60 py-1">
               <a 
-                href="https://www.aiwebtools.ai" 
+                href="https://aiwebtools.lovable.app/?via=aiwebtools" 
                 className="hover:text-neon-blue transition-colors"
               >
                 © 2025 AI WEB TOOLS LLC All rights reserved.
@@ -127,7 +127,7 @@ const Footer: React.FC = () => {
         {/* More AI Tools corner button */}
         <div className="fixed bottom-4 right-4 z-10">
           <a 
-            href="https://www.aiwebtools.ai"
+            href="https://aiwebtools.lovable.app/?via=aiwebtools"
             className="flex items-center justify-center px-4 py-2 rounded-full bg-cyber-dark border border-neon-green text-neon-green hover:bg-neon-green/10 transition-all shadow-neon-green"
           >
             More AI Tools
