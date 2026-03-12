@@ -63,7 +63,7 @@ const Navbar: React.FC = () => {
             <CyberButton 
               variant="green" 
               size="sm"
-              href="https://www.aiwebtools.ai"
+              href="https://aiwebtools.lovable.app/?via=aiwebtools"
               glowing
             >
               More AI Tools
