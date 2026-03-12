@@ -115,7 +115,7 @@ const Footer: React.FC = () => {
           <div className="w-full md:w-4/12 px-4 mx-auto text-center">
             <div className="text-sm text-white/60 py-1">
               <a 
-                href="https://www.aiwebtools.ai" 
+                href="https://aiwebtools.lovable.app/?via=aiwebtools" 
                 className="hover:text-neon-blue transition-colors"
               >
                 © 2025 AI WEB TOOLS LLC All rights reserved.
